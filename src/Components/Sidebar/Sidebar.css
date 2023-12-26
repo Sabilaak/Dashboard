@@ -1,0 +1,115 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 300ms ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    height: 100%;
+    padding-top: 1rem;
+}
+.profile{
+  
+    height: 10rem;
+    
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+.imgone{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}.menuItem{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 1.7rem;
+    background-color: rgb(221, 243, 237);
+    font-weight: bold;
+    
+    
+}
+.menuItem:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+  .gamil_text{
+    position: relative;
+    margin-top: -18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+  }
+.logout{
+    
+    color: blue;
+    margin-left: 4.4rem;
+    position: absolute;
+    transition: all 300ms ease;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    margin-left: 2.5rem;
+    transition: all 300ms ease;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    
+}
+.menuItem:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(158, 206, 234);
+    margin-left: 0;
+}
+.active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: rgb(132, 164, 218);
+    margin-right: calc(1rem - 8px);
+  }
+  .menu .menuItem:last-child {
+    position: absolute;
+    
+bottom: 2.3rem;
+width: 95px;
+  }
+  @media screen and (max-width:1200px) {
+    .menuItem>span{
+      display: none;
+    }
+    .profile{
+      display: none;
+    }
+    
+  }
+  @media screen and (max-width:768px) {
+.Sidebar{
+  display: none;
+}
+  }

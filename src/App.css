@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.AppMains {
+  display: grid;
+  height: 97%;
+  width: 100%;
+   background-color: #fdfafd;
+   
+   /* padding-left: 1.2rem; */
+   
+  /* border-radius: 1rem; */
+  grid-template-columns: 13.2rem auto 2.3rem;
+  overflow: hidden;
+}
+.third_main{
+  background-color: rgb(166, 207, 215);
+  /* position: relative; */
+  height: 100% !important;
+  
+}
+@media screen and (max-width:1200px) {
+  .AppMains{
+    grid-template-columns: 30% 70% auto;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width:768px) {
+.AppMains{
+  grid-template-columns: 1fr ;
+}
+
+}

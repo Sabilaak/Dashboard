@@ -1,0 +1,47 @@
+.main{
+    height: 100%;
+}
+.btn_shape{
+    border-radius: 20px;
+    font-size:13px;
+}
+.haedmain{
+    padding-top: 2rem;
+}
+.cardmain{
+    padding: 3rem;
+}
+.cardmaintwo{
+    padding: 3rem;
+    padding-top: 1rem;
+}
+.text-my-own-color{
+        color: #131212 !important; 
+      }
+      .text-my-own-color:hover, .text-my-own-color:active {
+        color: #141413 !important; 
+      }
+.btn_one{
+    background-color: rgb(243, 243, 129);
+}
+.btn_two{
+    background-color: rgb(212, 96, 145);
+}
+.btn_three{
+    background-color: rgb(218, 95, 213)
+}
+.btn_four{
+background-color: rgb(106, 239, 30);
+}
+.btn_five{
+background-color: rgb(0, 149, 255);
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+@media screen and (max-width:1200px) {
+    .main{
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+}
